@@ -13,6 +13,25 @@ export default {
         return{
             store
         }
+    },
+    methods:{
+        filter_by_type(type){
+            store.filterType = type;
+        }
+    },
+    computed:{
+        filteredDefinitions(){
+            if(store.filterType != 'all'){
+                let filterDefinition = store.definitions.filter((item) => {
+                    return item.type === store.filterType
+                })
+
+                return filterDefinition;
+            }
+            else{
+                return store.definitions;
+            }
+        }
     }
 }
 </script>
@@ -56,9 +75,9 @@ export default {
                             <h2>Glossario</h2>
                         </div>
                         <!-- SEZIONE FILTRI -->
-                        <FilterSection />
-                        <!-- SEZIONE DELLE DEFINIZIONI -->
-                        <DefinitionsSection v-for="defs in store.definitions" :key="def.id" :section="defs"/>
+                        <FilterSection @filter_by_type="filter_by_type"/>
+                        <!-- SEZIONE DELLE DEFINIZIONI: ciclo le sezioni: common, html, css, javascript, git, vuejs, vite -->
+                        <DefinitionsSection v-for="section in filteredDefinitions" :key="section.id" :section="section"/>
                     </div>
                 </div>
             </div>

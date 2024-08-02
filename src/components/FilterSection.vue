@@ -1,15 +1,23 @@
 <script>
+import { store } from '../store.js';
+
 export default {
-    
+    data(){
+        return{
+            store
+        }
+    },
+    methods:{
+        filterByType(type){
+            this.$emit('filter_by_type', type);
+        }
+    }
 }
 </script>
 <template lang="">
     <div class="filters">
-        <button class="filter-btn" id="all">Tutti</button>
-        <button class="filter-btn" id="git">GIT</button>
-        <button class="filter-btn" id="html">HTML</button>
-        <button class="filter-btn" id="css">CSS</button>
-        <button class="filter-btn" id="js">js</button>
+        <button class="filter-btn" @click="filterByType('all')">Tutti</button>
+        <button class="filter-btn" @click="filterByType(section.type)" v-for="section in store.definitions" :key="section.id">{{ section.type.toUpperCase() }}</button>
     </div>
 </template>
 <style lang="scss" scoped>

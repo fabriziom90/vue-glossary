@@ -13,7 +13,10 @@ export default {
     <div class="row definitions">
         <div class="col-12">
             <h3>{{ section.type.toUpperCase() }}</h3>
-            <DefinitionCard />
+            <div class="row">
+                <!-- vado a ciclare l'array defs della sezione -->
+                <DefinitionCard v-for="definition, index in section.defs" :key="index" :def="definition"/>
+            </div>
         </div>
     </div>
 </template>

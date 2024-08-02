@@ -5,7 +5,7 @@
       "defs": [
         {
           "name": "FRAMEWORK",
-          "description": "Un framework un insieme di funzionalità, metodi ed anche tecnologie di diverso tipo già pronte all'uso che possono essere utilizzate per realizzare una pagina / sito / applicazione in maniera più rapida e semplice.E' una sorta di intelaiatura su cui realizzare la nostra applicazione / sito.Una volta cominciato a lavorare su questo non si esce."
+          "description": "Un framework un insieme di funzionalità, librerie, metodi ed anche tecnologie di diverso tipo già pronte all'uso che possono essere utilizzate per realizzare una pagina / sito / applicazione in maniera più rapida e semplice.E' una sorta di intelaiatura su cui realizzare la nostra applicazione / sito.Una volta cominciato a lavorare su questo non si esce."
         },
         {
           "name": "LIBRERIA",
