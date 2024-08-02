@@ -348,7 +348,33 @@
               "description": "v-if è la direttiva che ci permette di mostrare o meno un div se la sua condizione è vera. A differenza del v-if, il div esiste all'interno del documento anche se la condizione risulta falsa e avrà impostata la proprietà display: none"
             }
           ]
-        }
+        },
+        {
+            "name": "PROPS",
+            "description": "Una prop è un modo/uno strumento che permette di inviare dati da una componente padre alla componente figlio."
+          },
+          {
+            "name": "STATE MANAGEMENT",
+            "description": "Lo State Management è uno strumento nel quale andiamo a mettere le informazioni che devono essere utilizzabili da più componenti onde evitare la bad practice del prop drilling."
+          },
+          {
+            "name": "EMIT",
+            "description": "L'emit è uno strumento/un modo che permette di inviare dati da una componente figlio alla propria componente genitore.",
+            "appendix": [
+              {
+                "name": "Lanciare emit direttamente da input",
+                "description": "Non dobbiamo lavorare sui dati prima di lanciare l'evento"
+              },
+              {
+                "name": "Lanciare emit da metodo",
+                "description": "Dobbiamo lavorare sui dati prima di lanciare l'evento"
+              }
+            ]
+          },
+          {
+            "name": "COMPUTED PROPERTIES",
+            "description": "Le computed properties sono delle funzioni che però: <br><br> <ul><li>Si utilizzano come se fossero delle variabili infatti è obbligatorio mettere il return al loro interno.</li><li>Si attivano da sole se, una variabili utilizzata al suo interno, subisce dei cambiamenti.</li>"
+          }
       ]
     },
     {
@@ -379,32 +405,6 @@
         {
           "name": "SASS",
           "description": "Sass (Syntattically Awesome StyleSheet) è un preprocessore CSS che ci permette di semplificare e migliorare la leggibilità del codice css aggiungendo regole sintattiche allo scopo."
-        },
-        {
-          "name": "PROPS",
-          "description": "Una prop è un modo/uno strumento che permette di inviare dati da una componente padre alla componente figlio."
-        },
-        {
-          "name": "STATE MANAGEMENT",
-          "description": "Lo State Management è uno strumento nel quale andiamo a mettere le informazioni che devono essere utilizzabili da più componenti onde evitare la bad practice del prop drilling."
-        },
-        {
-          "name": "EMIT",
-          "description": "L'emit è uno strumento/un modo che permette di inviare dati da una componente figlio alla propria componente genitore.",
-          "appendix": [
-            {
-              "name": "Lanciare emit direttamente da input",
-              "description": "Non dobbiamo lavorare sui dati prima di lanciare l'evento"
-            },
-            {
-              "name": "Lanciare emit da metodo",
-              "description": "Dobbiamo lavorare sui dati prima di lanciare l'evento"
-            }
-          ]
-        },
-        {
-          "name": "COMPUTED PROPERTIES",
-          "description": "Le computed properties sono delle funzioni che però: <br><br> <ul><li>Si utilizzano come se fossero delle variabili infatti è obbligatorio mettere il return al loro interno.</li><li>Si attivano da sole se, una variabili utilizzata al suo interno, subisce dei cambiamenti.</li>"
         }
       ]
     }

@@ -1,13 +1,21 @@
+<script>
+import { store } from './store.js'
+export default {
+  data(){
+    return{
+      store
+    }
+  },
+  created(){
+    console.log(store.definitions);
+  }
+}
+</script>
 <template lang="">
   <div>
     
   </div>
 </template>
-<script>
-export default {
-  
-}
-</script>
 <style lang="">
   
 </style>
