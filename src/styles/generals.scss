@@ -1,1 +1,10 @@
-@import '/node_modules/bootstrap/dist/css/bootstrap.css'
+@use './partials/variables' as *;
+
+@import '/node_modules/bootstrap/dist/css/bootstrap.css';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body{
+    font-family: $family;
+    background-color: $primary_color;
+}
