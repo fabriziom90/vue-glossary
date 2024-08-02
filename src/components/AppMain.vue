@@ -1,6 +1,19 @@
 <script>
+import FilterSection from './FilterSection.vue';
+import DefinitionsSection from './DefinitionsSection.vue';
+
+import { store } from '../store.js';
+
 export default {
-    
+    components:{
+        FilterSection,
+        DefinitionsSection
+    },
+    data(){
+        return{
+            store
+        }
+    }
 }
 </script>
 <template lang="">
@@ -42,6 +55,10 @@ export default {
                         <div id="glossary">
                             <h2>Glossario</h2>
                         </div>
+                        <!-- SEZIONE FILTRI -->
+                        <FilterSection />
+                        <!-- SEZIONE DELLE DEFINIZIONI -->
+                        <DefinitionsSection v-for="defs in store.definitions" :key="def.id" :section="defs"/>
                     </div>
                 </div>
             </div>
