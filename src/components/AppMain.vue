@@ -21,12 +21,37 @@ export default {
     },
     computed:{
         filteredDefinitions(){
-            if(store.filterType != 'all'){
-                let filterDefinition = store.definitions.filter((item) => {
+            
+            let filterDefinitions = [];
+            if(store.searchDef != '' && store.filterType == 'all'){
+                store.definitions.forEach((item) => {
+                    
+                    let obj = {
+                        id: item.id,
+                        type: item.type,
+                        defs: []
+                    }
+                    
+
+                    item.defs.forEach( (def) => {
+                        
+                        if(def.name.toLowerCase().includes(store.searchDef.toLowerCase())){
+                            obj.defs.push(def);
+                            console.log(obj)
+                            filterDefinitions.push(obj);       
+                        }
+                    })
+                })
+                console.log(filterDefinitions)
+                
+                return filterDefinitions;
+            }
+            else if(store.filterType != 'all' && store.searchDef == ''){
+                filterDefinitions = store.definitions.filter((item) => {
                     return item.type === store.filterType
                 })
-
-                return filterDefinition;
+                
+                return filterDefinitions;
             }
             else{
                 return store.definitions;

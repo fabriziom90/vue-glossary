@@ -15,9 +15,7 @@ export default {
       store
     }
   },
-  created(){
-    console.log(store.definitions);
-  }
+
 }
 </script>
 <template lang="">

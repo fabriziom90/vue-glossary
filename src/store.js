@@ -3,5 +3,6 @@ import definitionsJson from './data/definitions.json';
 
 export const store = reactive({
     definitions: definitionsJson,
-    filterType: 'all'
+    filterType: 'all',
+    searchDef: ''
 });

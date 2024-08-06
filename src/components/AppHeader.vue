@@ -1,6 +1,11 @@
 <script>
+    import {store } from '../store.js';
 export default {
-    
+    data(){
+        return{
+            store
+        }
+    }
 }
 </script>
 <template lang="">
@@ -12,7 +17,7 @@ export default {
                     <h2 class="d-inline-block v-align-middle">Boolean</h2>
                 </div>
                 <div class="col-6">
-                    <input type="text" placeholder="Cerca definizione">
+                    <input type="text" placeholder="Cerca definizione" @keyup.enter="store.searchDef = $event.target.value" >
                 </div>
             </div>
         </div>
@@ -22,6 +27,7 @@ export default {
 <style lang="scss" scoped>
 header{
     color: #fff;
+    border-bottom: 1px solid #fff;
     .logo{
         width: 100px;
     }
