@@ -21,7 +21,6 @@ export default {
                 </div>
             </div>
         </div>
-
     </header>
 </template>
 <style lang="scss" scoped>

@@ -50,6 +50,18 @@
         {
           "name": "CLI",
           "description": "CLI è l'acronimo per Command Line Interface ed è una interfaccia grafica. Molto spesso si usa per la creazione di progetti con determinate caratteristiche (es. scaffolding già pronto)"
+        },
+        {
+          "name": "LINGUAGGIO BACKEND",
+          "description": "Un linguaggio backend è un linguaggio che si trova su una macchina, detta server, esterno e che si occupa di restituire una versione interpretata di codice HTML, CSS, JS oppure dati in formato json."
+        },
+        {
+          "name": "APPLICAZIONE MONOLITICA",
+          "description": "Un'applicazione monolitica è un'applicazione che si occupa di generare una versione leggibile/interpretata di HTML, CSS, JS da inviare al browser (client) per essere visualizzata dall'utente. Una volta che il server ha interpretato la richiesta effettuata dal client, invia una versione leggibile dal browser in cui troviamo solo i linguaggi indicati prima"
+        },
+        {
+          "name": "APPLICAZIONE NON MONOLITICA",
+          "description": "Un'applicazione non monolitica è un'applicazione composta da due sotto progetti. Uno scritto interamente in HTML, CSS, JS che si occupa di mostrare dati all'utente. Per fare ciò, si occuperà di effettuare delle richieste alla seconda applicazione, scritta in un linguaggio backend. Tale applicazione ha il compito di inviare dati in formato json al client. L'insieme di indirizzi che la parte frontend dell'applicativo può chiamare sono gli endpoint di una o più API."
         }
       ]
     },
@@ -412,6 +424,52 @@
         {
           "name": "SASS",
           "description": "Sass (Syntattically Awesome StyleSheet) è un preprocessore CSS che ci permette di semplificare e migliorare la leggibilità del codice css aggiungendo regole sintattiche allo scopo."
+        }
+      ]
+    },
+    {
+      "type": "PHP",
+      "defs": [
+        {
+          "name": "PHP",
+          "description": "PHP sta per Personal Home Page ed è un linguaggio di programmazione backend tra i più usati nello sviluppo web."
+        },
+        {
+          "name": "MYSQLI",
+          "description": "mysqli è un'estensione di php che ci permette di interfacciare MySQL con php e quindi di leggere/scrivere dati da/in un database. Essendo un'estensione di php, potrebbe non essere installata da subito. In tal caso, bisogna provvedere ad installarla."
+        }
+      ]
+    },
+    {
+      "type": "DATABASE",
+      "defs": [
+        {
+          "name": "DATABASE",
+          "description": "I database sono delle tecnologie che permettono la persistenza di dati. Questi insiemi di dati, detti collezioni, saranno salvati in maniera coerente tra di loro in determinate strutture."
+        },
+        {
+          "name": "(R)DBMS",
+          "description": "I (R)DBMS sono i mezzi tecnologici attraverso i quali possiamo gestire le collezioni di dati"
+        },
+        {
+          "name": "TRANSAZIONI",
+          "description": "Le transazioni sono un insieme di operazioni che al loro termine, se tali operazioni vanno a buon fine, devono portare ad una variazione dei/sui dati. Se una sola di queste operazioni non va a buon fine, i dati non devono subire variazioni. Tali transazioni devono essere eseguite in un ordine logico."
+        },
+        {
+          "name": "PRIMARY KEY",
+          "description": "La primary key è l'identificatore primario della riga all'interno della tabella. E' un valore numerico univoco all'interno della tabella stessa"
+        },
+        {
+          "name": "INDICI",
+          "description": "Gli indici sono strutture dati che il DBMS utilizza per velocizzare le ricerche all'interno del database. Più colonne contemporaneamente possono essere degli indici. Una chiave primaria è SEMPRE un indice."
+        },
+        {
+          "name": "DIAGRAMMA ER",
+          "description": "Il diagramma ER (Entity Relationship) è una rappresentazione grafica della struttura dei database"
+        },
+        {
+          "name": "SQL",
+          "description": "SQL è un linguaggio che serve per interagire con i RDBMS ed offre diverse funzioni, tra cui la scrittura, la lettura, la modifica e la cancellazione di database, tabelle e righe di tabelle."
         }
       ]
     }

@@ -17,32 +17,48 @@ export default {
     methods:{
         filter_by_type(type){
             store.filterType = type;
+        },
+        getFilms(){
+            axios.get('URL_FILMS').then((result) => {
+                this.films = result.data.films;
+
+                films.forEach((film) => {
+                    axios.get('URL_CAST_FILM'+film.id).then((response) => {
+                        film.cast = response.data.cast
+                    });
+                });
+            });
         }
     },
     computed:{
+
         filteredDefinitions(){
             
             let filterDefinitions = [];
+            // se entrambe le variabili searchDef non è vuota e filterType è uguale ad all
             if(store.searchDef != '' && store.filterType == 'all'){
+
+                // ciclo l'array delle definizioni
                 store.definitions.forEach((item) => {
                     
+                    // creo un nuovo oggetto con le proprietà id, type e defs. Queto oggetto, rappresenta l'oggetto della sezione
                     let obj = {
                         id: item.id,
                         type: item.type,
                         defs: []
                     }
                     
-
+                    //dell'elemento che sto ciclando attualmente, ovvero della singola sezione, ne ciclo l'array delle definizioni
                     item.defs.forEach( (def) => {
-                        
+                        // se il nome della definizione include quello che ho scritto
                         if(def.name.toLowerCase().includes(store.searchDef.toLowerCase())){
                             obj.defs.push(def);
-                            console.log(obj)
+                            
                             filterDefinitions.push(obj);       
                         }
                     })
                 })
-                console.log(filterDefinitions)
+                
                 
                 return filterDefinitions;
             }
@@ -79,6 +95,11 @@ export default {
                                 coding
                                 integrativo.
                             </p>
+                        </div>
+                        <div class="card" v-for="film, index in films">
+                            <ul>
+                                <li v-for="cast in casts[index]"></li>
+                            </ul>
                         </div>
                         <div class="my-4">
                             <h2>Punti centrali del glossario</h2>
