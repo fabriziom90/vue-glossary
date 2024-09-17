@@ -62,6 +62,10 @@
         {
           "name": "APPLICAZIONE NON MONOLITICA",
           "description": "Un'applicazione non monolitica è un'applicazione composta da due sotto progetti. Uno scritto interamente in HTML, CSS, JS che si occupa di mostrare dati all'utente. Per fare ciò, si occuperà di effettuare delle richieste alla seconda applicazione, scritta in un linguaggio backend. Tale applicazione ha il compito di inviare dati in formato json al client. L'insieme di indirizzi che la parte frontend dell'applicativo può chiamare sono gli endpoint di una o più API."
+        },
+        {
+          "name": "OOP",
+          "description": "La OOP (Object Oriented Programming) è un paradigma presente in diversi linguaggi (PHP, Java, Javascript, Python, C++...) e consiste nella realizzazione di modelli rappresentanti un pezzo di realtà in codice."
         }
       ]
     },
@@ -237,11 +241,11 @@
         },
         {
           "name": "CLASSE",
-          "description": "E' un'astrazione informatica di un concetto / elemento reale avente determinate proprietà ed operazioni."
+          "description": "Definizione 1: E' un modello programmativo/informatico che rappresenta un concetto reale. (es. Auto, Gatto, Immobile, Biscotto...). Definizione 2: E' la rappresentazione di un concetto reale in formato codice. Definizione 3: E' un modello che rappresenta un pezzo di realtà."
         },
         {
           "name": "OGGETTO / ISTANZA",
-          "description": "L'oggeto o istanza è un elemento che nasce da una classe e pertanto avrà le stesse proprietà ed operazioni date dalla classe.A questi possiamo assegnare dei valori."
+          "description": "Definizione 1: L'oggeto o istanza è un elemento che nasce da una classe e pertanto avrà le stesse proprietà ed operazioni date dalla classe.A questi possiamo assegnare dei valori. Definizione 2: L'istanza/oggetto di una classe è la concretizzazione della classe."
         },
         {
           "name": "OPERATORE DI ASSEGNAZIONE <strong>=</strong>",
