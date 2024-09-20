@@ -66,6 +66,18 @@
         {
           "name": "OOP",
           "description": "La OOP (Object Oriented Programming) è un paradigma presente in diversi linguaggi (PHP, Java, Javascript, Python, C++...) e consiste nella realizzazione di modelli rappresentanti un pezzo di realtà in codice."
+        },
+        {
+          "name": "EREDITARIETA'",
+          "description": "L'ereditarietà è una caratteristica dei linguaggi ad oggetti, con la quale possiamo fare in modo che una classe, detta figlia, erediti le proprietà ed i metodi di un altra, detta genitore."
+        },
+        {
+          "name": "COMPOSIZIONE/INCAPSULAMENTO",
+          "description": "La composizione (o incapsulamento) è la caratteristica attraverso la quale all'interno di una classe possiamo definire una proprietà che abbia come valore un'istanza di un'altra classe."
+        },
+        {
+          "name": "POLIMORFISMO",
+          "description": "Il polimorfismo nei linguaggi ad oggetti è la possibilità di sovrascrivere uno o più metodi della classe genitore all'interno della classe figlio. Quando tramite un'istanza della classe figlio, richiamiamo il metodo in questione, verrà eseguito quello del figlio ovviamente, quindi quello che ha sovrascritto quello del padre."
         }
       ]
     },
