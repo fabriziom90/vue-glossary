@@ -78,6 +78,14 @@
         {
           "name": "POLIMORFISMO",
           "description": "Il polimorfismo nei linguaggi ad oggetti è la possibilità di sovrascrivere uno o più metodi della classe genitore all'interno della classe figlio. Quando tramite un'istanza della classe figlio, richiamiamo il metodo in questione, verrà eseguito quello del figlio ovviamente, quindi quello che ha sovrascritto quello del padre."
+        },
+        {
+          "name": "Design Pattern",
+          "description": "Un design pattern è un insieme di linee guida da applicare per lo sviluppo di un software."
+        },
+        {
+          "name":"MVC",
+          "description": "MVC sta per Model View Controller ed è il design pattern di Laravel (e molti altri framework). <br><br> <ul><li>Il <strong>Model</strong> è la rappresentazione di un aspetto della realtà. E' una classe fondamentalmente. Rappresenta inoltre le tabelle presenti nel database.</li><li>La <strong>View</strong> è la parte che viene vista dall'utente finale e permette l'interazione tra lui e la nostra applicazione permettendogli di svolgere operazioni come ad esempio inserire un nuovo record nel db, cancellarlo, modificarlo, visualizzarlo, leggere i post di un blog, comprare qualcosa ecc.</li><li>Il <strong>controller</strong> è il \"cervello\" dell'applicazione. Può essere visto come un ponte che collega il model alla view e mette in relazione queste due componenti. Si occupa, in sostanza della logica di business dell'applicazione</li></ul>"
         }
       ]
     },
@@ -112,6 +120,14 @@
         {
           "name": "RESET",
           "description": "Ritorno ad un commit precedente alterando la storia passata.Se si fa l'hard reset si cancella la storia, se si fa il reset semplice le modifiche dei commit successivi a quello in cui si vuole tornare vengono messe in area di staging."
+        },
+        {
+          "name": "BRANCH",
+          "description": "Un branch è un ramo che parte da quello principale e nel quale andiamo a sviluppare una funzionalità specifica oppure ristrutturare/modificare una già esistente. E' una linea indipendente di sviluppo. E' possibile navigare sempre tra un branch e l'altro."
+        },
+        {
+          "name": "MERGE",
+          "description": "Operazione con la quale andiamo a fondere un ramo di sviluppo, in quello principale."
         }
       ]
     },
