@@ -522,6 +522,14 @@
         {
           "name": "SQL",
           "description": "SQL è un linguaggio che serve per interagire con i RDBMS ed offre diverse funzioni, tra cui la scrittura, la lettura, la modifica e la cancellazione di database, tabelle e righe di tabelle."
+        },
+        {
+          "name": "HARD DELETE",
+          "description": "L'hard delete è la cancellazione effettiva del record all'interno del database. <strong>Tale operazione è irreversibile.</strong> poichè una volta cancellato il record non si può più recuperare."
+        },
+        {
+          "name": "SOFT DELETE",
+          "description": "La soft delete è una cancellazione finta poichè il record rimane nel database, ma tutte le tipologie di utenti al di fuori degli amminsitratori del sistema, non possono vederla. L'amministratore del sistema deve comunque poter cancellare definitivamente il record, quindi avrà uno strumento apposito. Spesso vengono visualizzati questi record disabilitati alla visualizzazione ospite in una tabella a parte."
         }
       ]
     },
