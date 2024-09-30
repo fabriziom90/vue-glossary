@@ -86,6 +86,22 @@
         {
           "name":"MVC",
           "description": "MVC sta per Model View Controller ed è il design pattern di Laravel (e molti altri framework). <br><br> <ul><li>Il <strong>Model</strong> è la rappresentazione di un aspetto della realtà. E' una classe fondamentalmente. Rappresenta inoltre le tabelle presenti nel database.</li><li>La <strong>View</strong> è la parte che viene vista dall'utente finale e permette l'interazione tra lui e la nostra applicazione permettendogli di svolgere operazioni come ad esempio inserire un nuovo record nel db, cancellarlo, modificarlo, visualizzarlo, leggere i post di un blog, comprare qualcosa ecc.</li><li>Il <strong>controller</strong> è il \"cervello\" dell'applicazione. Può essere visto come un ponte che collega il model alla view e mette in relazione queste due componenti. Si occupa, in sostanza della logica di business dell'applicazione</li></ul>"
+        },
+        {
+          "name": "COMPOSER",
+          "description": "Il composer è un gestore di dipendenze che permette di installare pacchetti/librerie che permettono alla nostra applicazione di funzionare."
+        },
+        {
+          "name": "ORM",
+          "description": "Un ORM (Object, Relationship Mapping) è un'interfaccia intermedia tra database e codice che si occupa della connesione, e del recupero e persistenza dei dati in un database."
+        },
+        {
+          "name": "CRUD",
+          "description": "CRUD è l'acronimo di <strong>C</strong>reate, <strong>R</strong>ead, <strong>U</strong>pdate, <strong>D</strong>elete. Queste operazioni sono le operazioni fondamentali, base, elementari che si possono effettuare sui dati."
+        },
+        {
+          "name": "REST",
+          "description": "<strong>RE</strong>presentional <strong>S</strong>tate <strong>T</strong>ransfer: è un'archiettura chiara e precisa che permette lo scambio/utilizzo di risorse. Le risorse sono infomrazioni a cui si può accedere attraverso un URI. Client e Server comunicano attraverso il protocollo HTTP (HTTPS) per scambiarsi <span class='text-decoration-underline'>rappresentazioni</span> di queste risorse. L'URL della richiesta deve essere ben definita ed univoca, inoltre devono essere utilizzati dei metodi HTTP per azioni specifiche sulle risorse. Questi metodi sono: <br><br> <ul class='list-unstyled m-0'><li><strong>GET</strong>: recupero dati (lettura)</li><li><strong>POST</strong>: aggiunta dati (scrittura)</li><li><strong>UPDATE/PATCH</strong>:Modifica dati (scrittura)</li><li><strong>DELETE</strong>: cancellazione</li></ul>"
         }
       ]
     },
@@ -362,6 +378,10 @@
         {
           "name": "AJAX",
           "description": "Ajax è l'acronimo per Asinchronous Javascript and XML ed è una tecnologia che permette di effettuare chiamate http <strong>asincrone</strong> con javascript."
+        },
+        {
+          "name": "DATA ATTRIBUTE",
+          "description": "Un data attribute è un attributo personalizzato che deve avere la seguente sintassi: data-nome_attributo. Dopo data- quindi va messo il nome dell'attributo in minuscolo e con gli spazi sostituiti dall'underscore (_). Non sono ammessi numeri e caratteri speciali. I data attribute si utilizzano per personalizzare modali, inviare informazioni in generale."
         }
       ]
     },
@@ -502,6 +522,19 @@
         {
           "name": "SQL",
           "description": "SQL è un linguaggio che serve per interagire con i RDBMS ed offre diverse funzioni, tra cui la scrittura, la lettura, la modifica e la cancellazione di database, tabelle e righe di tabelle."
+        }
+      ]
+    },
+    {
+      "type": "LARAVEL",
+      "defs" : [
+        {
+          "name": "MIGRATIONS",
+          "description": "Le migrations sono dei file che permettono di alterare la struttura del database creando nuove tabelle oppure modificando o cancellando quelle già esistenti."
+        },
+        {
+          "name": "SEEDER",
+          "description": "Strumento attraverso il quale possiamo popolare il database in maniera casuale attraverso la classe FakerPHP oppure in maniera reale (cioè con dati reali) leggendoli/recuperandoli da un altro file."
         }
       ]
     }

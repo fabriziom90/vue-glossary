@@ -9,7 +9,7 @@ export default {
     <div class="col-12 col-md-6 col-lg-4">
         <div class="card p-3 rounded-0 bg-bluebool text-white m-2 min-height-300">
             <h3 class="text-center">{{ def.name }}</h3>
-            <p>{{ def.description }}</p>
+            <p v-html="def.description"></p>
         </div>
     </div>
 </template>
