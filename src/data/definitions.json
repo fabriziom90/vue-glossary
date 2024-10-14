@@ -530,6 +530,14 @@
         {
           "name": "SOFT DELETE",
           "description": "La soft delete è una cancellazione finta poichè il record rimane nel database, ma tutte le tipologie di utenti al di fuori degli amminsitratori del sistema, non possono vederla. L'amministratore del sistema deve comunque poter cancellare definitivamente il record, quindi avrà uno strumento apposito. Spesso vengono visualizzati questi record disabilitati alla visualizzazione ospite in una tabella a parte."
+        },
+        {
+          "name": "FUNZIONI DI HASHING",
+          "description": "Le funzioni di hashing sono delle funzioni non invertibili che trasformano una stringa di lunghezza arbitraria (variabile) in una stringa di lunghezza prefissata. Una volta trasformata la stringa, non si può tornare indietro."
+        },
+        {
+          "name": "MIDDLEWARE",
+          "description": "Un middleware è una componente che si occupa di filtrare tutte le richieste HTTP provenienti dal client."
         }
       ]
     },
